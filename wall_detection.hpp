@@ -12,6 +12,8 @@
 #include "MovingAverageFilter.hpp"
 #include "UltrasonicSensor.hpp"
 
+namespace mtrn3100 {
+
 template <size_t N>
 class wall_detection : public UltrasonicSensor {
 public: 
@@ -83,7 +85,9 @@ private:
     float leftReading = 0;
     float rightReading = 0;
     float frontReading = 0;
-    bool wallL = false
-    bool wallR = false
-    bool wallF = false
+    bool wallL = false;
+    bool wallR = false;
+    bool wallF = false;
 };
+
+} // namespace mtrn3100

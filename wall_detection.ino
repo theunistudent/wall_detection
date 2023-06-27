@@ -8,13 +8,13 @@
 
 #include "UltrasonicSensor.hpp"
 
+mtrn3100::UltrasonicSensor sensor(40, A13);
+mtrn3100::wall_detection<100> detector(sensor);
 
 void setup() {
   Serial.begin(115200);
-  %set up wall detection class
-  mtrn3100::UltrasonicSensor sensor(40, A13);
-  wall_detection<100> detector(sensor)
-
+  //set up wall detection class
+  
   detector.sensorSetup();
 
 
@@ -24,6 +24,6 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-    detector.checkwalls();
+    detector.checkWalls();
 
 }
