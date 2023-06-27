@@ -16,7 +16,7 @@ void setup() {
   mtrn3100::UltrasonicSensor sensor(40, A13);
   wall_detection<100> detector(sensor)
 
-  detector.setup();
+  detector.sensorSetup();
 
 }
 

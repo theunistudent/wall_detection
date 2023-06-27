@@ -30,7 +30,7 @@ VL6180X sensorR;
 //VL6180X sensor5;
 //VL6180X sensor6;
 
-void setup()
+void lidarSetup()
 {
   Serial.begin(9600);
   Wire.begin();

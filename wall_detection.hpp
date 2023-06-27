@@ -20,8 +20,8 @@ public:
     }
 
 
-    void lidarsetup() {
-      setup();
+    void sensorSetup() {
+      lidarSetup();
       Serial.println("Set up Succses");
       
     }
