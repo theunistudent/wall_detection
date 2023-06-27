@@ -30,10 +30,13 @@ public:
     void checkWalls() {
         // ultrasonic
         //adds to buffer, outputs to monitor, updates variable
-        filter.sample(echo());
-        frontReading = filter.average();
-        Serial.print("\tDistanceF: ");
-        Serial.print(frontReading = filter.average(););
+        if (filter.isFull()) {
+            filter.sample(echo());
+            frontReading = filter.average();
+            Serial.print("\tDistanceF: ");
+            Serial.print(frontReading = filter.average());
+        }
+       
       
         // print out readings lidar
         Serial.print("\tDistanceL: ");
