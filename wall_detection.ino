@@ -4,7 +4,6 @@
 #include <Wire.h>
 #include <VL6180X.h>
 
-#include "lidar_setup.hpp"
 #include "wall_detection.hpp"
 
 #include "UltrasonicSensor.hpp"
@@ -17,6 +16,8 @@ void setup() {
   wall_detection<100> detector(sensor)
 
   detector.sensorSetup();
+
+  detector.checkwalls
 
 }
 
