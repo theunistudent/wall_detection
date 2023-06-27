@@ -17,11 +17,13 @@ void setup() {
 
   detector.sensorSetup();
 
-  detector.checkwalls
+
 
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+
+    detector.checkwalls();
 
 }
